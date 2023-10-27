@@ -1,0 +1,20 @@
+/* Непосещенная ссылка */
+ul li a:link {
+    color: rgb(49, 19, 245);
+  }
+  
+  /* Посещенная ссылка */
+  ul li a:visited {
+    color: purple;
+  }
+  
+  /* Ссылка при наведении */
+  ul li a:hover {
+    color: rgb(86, 184, 6);
+    text-decoration: underline;
+  }
+  
+  /* Активная ссылка (при нажатии) */
+  ul li a:active {
+    color: green;
+  }

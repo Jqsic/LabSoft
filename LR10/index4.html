@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Arr</title>
+</head>
+
+<body>
+
+  <script>
+
+const arr = [1, 2, 3, undefined, 5, undefined, 7];
+
+// Вычисление и вывод длины массива
+console.log(`Длина массива: ${arr.length}`);
+
+// Перебор элементов массива и вывод инициализированных элементов
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] !== undefined) {
+    console.log(`Элемент с индексом ${i}: ${arr[i]}`);
+  }
+}
+</script>
+
+</body>
+
+</html>

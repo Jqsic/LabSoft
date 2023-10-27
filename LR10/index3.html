@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Array Manipulation Example</title>
+</head>
+
+<body>
+
+  <script>
+
+    var myArray = [1, 2, 3, 4, 5];
+
+    myArray.splice(1, 2); // Удалить элементы с индексами 1 и 2
+
+    myArray.unshift(6); // Добавить число 6 в начало массива
+    myArray.push(7, 8); // Добавить числа 7 и 8 в конец массива
+
+    myArray.shift(); // Удалить первый элемент массива
+    myArray.pop(); // Удалить последний элемент массива
+
+    console.log(myArray); // Выведет [6, 1, 4, 5, 7]
+
+    delete myArray[1]; // Удалить элемент с индексом 1
+    delete myArray[3]; // Удалить элемент с индексом 3
+    delete myArray[4]; // Удалить элемент с индексом 4
+    
+  </script>
+
+</body>
+
+</html>

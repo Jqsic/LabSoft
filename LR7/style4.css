@@ -1,0 +1,18 @@
+[type="radio"] {
+    display: none;
+  }
+  
+  
+  label {
+    display: inline-block;
+    padding: 5px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  [type="radio"]:checked + label {
+    background-color: #000000;
+    color: #ffffff;
+  }
