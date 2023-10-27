@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Поиск и фильтрация игр</title>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Поиск и фильтрация игр</h1>
+  
+  <form id="gameSearchForm">
+    <label for="searchInput">Поиск:</label>
+    <input type="text" id="searchInput" name="search" required>
+    
+    <p>Фильтры:</p>
+    
+    <label for="genreSelect">Жанр:</label>
+    <select id="genreSelect" name="genre">
+      <option value="">Все</option>
+      <option value="action">Экшн</option>
+      <option value="adventure">Приключения</option>
+      <option value="puzzle">Головоломки</option>
+      <option value="rpg">Ролевые игры</option>
+    </select>
+    
+    <label for="platformSelect">Платформа:</label>
+    <select id="platformSelect" name="platform">
+      <option value="">Все</option>
+      <option value="pc">PC</option>
+      <option value="console">Консоли</option>
+      <option value="mobile">Мобильные</option>
+    </select>
+    
+    <input type="submit" value="Поиск">
+  </form>
+  
+  <div id="searchResults">
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+p,h2 {
+  color: red;
+  
+}
+
+
+#test h2 + p {
+ color: aqua;
+}
+
+p[title="привет"] {
+  
+font-style: italic;
+color: blueviolet;
+}
