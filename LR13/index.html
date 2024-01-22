@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пора года</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Месяцы текущей поры года</h1>
+      <p id="seasonMessage"></p>
+    </div>
+    <div>
+      <h1>Определение возраста</h1>
+      <label for="dobInput">Введите дату рождения:</label>
+      <input type="date" id="dobInput" />
+      <button onclick="calculateAge()">Посчитать возраст</button>
+      <p id="ageMessage"></p>
+    </div>
+    <div>
+      <h1>Информация о временном промежутке</h1>
+      <button id="startBtn" onclick="startTimer()">Start</button>
+      <button id="endBtn" onclick="endTimer()">End</button>
+      <p id="timeInfo"></p>
+    </div>
+    <div>
+      <h1>Расстояние между координатами</h1>
+      <label for="lat1Input">Широта 1:</label>
+      <input type="number" step="any" id="lat1Input" />
+      <label for="lon1Input">Долгота 1:</label>
+      <input type="number" step="any" id="lon1Input" />
+      <br />
+      <label for="lat2Input">Широта 2:</label>
+      <input type="number" step="any" id="lat2Input" />
+      <label for="lon2Input">Долгота 2:</label>
+      <input type="number" step="any" id="lon2Input" />
+      <br />
+      <button onclick="calculateDistance()">Вычислить расстояние</button>
+      <p id="distanceInfo"></p>
+    </div>
+    <div>
+      <h1>Преобразование в верхний регистр</h1>
+      <input type="text" id="inputString" placeholder="Введите строку" />
+      <button onclick="convertToUpperCase()">Конвертировать</button>
+      <p>Исходная строка: <span id="originalStringDisplay"></span></p>
+      <p>Преобразованная строка: <span id="convertedStringDisplay"></span></p>
+    </div>
+    <div>
+      <h1>Проверка четности</h1>
+      <input type="number" id="inputNumber" />
+      <button onclick="checkOdd()">Проверка выполнена</button>
+    </div>
+    <div>
+      <h1>Проверка на начала строки</h1>
+      <input type="text" id="inputField" />
+      <button onclick="checkIfStartsWithNumber()">Проверить</button>
+      <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
